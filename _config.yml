@@ -1,5 +1,5 @@
 ---
-title: 叶夕青兮
+title: Blue Leaf at Dusk
 timezone: UTC
 newsletter: "生活就是一本书，一壶茶，一个阳光明媚的下午"
 keywords: 叶夕青兮, 原创独立博客, Erl, Jekyll
@@ -11,7 +11,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-production: true
+production: false
 email: zhangshiyu1992@hotmail.com
 author: Erl
 baseurl: ''
@@ -24,7 +24,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate-v2
   - jekyll-toc
-  - jekyll-katex
   - jekyll-extlinks
 
 exclude:

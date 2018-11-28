@@ -2,7 +2,7 @@
 layout: post
 title: 极简主义生活方式
 locale: zh
-ref: milimalism
+ref: minimalism
 date: "2018-11-25 11:42:10 +0800"
 keywords: 极简主义, 极简主义生活方式
 description: 说极简主义这四个字彻底改变了我的生活，也并不为过。

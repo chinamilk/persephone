@@ -19,3 +19,6 @@
 <link rel="stylesheet" href="{{ "/assets/css/jquery.fancybox.min.css" | relative_url }}" />
 <script src="{{ "/assets/js/gallery.js" | relative_url }}" defer></script>
 {% endif %}
+{% if page.layout == "blog" %}
+<script src="{{ "/assets/js/blog.js" | relative_url }}" defer></script>
+{% endif %}

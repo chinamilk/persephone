@@ -16,7 +16,7 @@ layout: default
   </div>
   {% assign posts=paginator.posts %}
   {% for post in posts %}
-    <article class="post__entry">
+    <article class="post__entry" data-figure="/img/features/{{post.ref}}.jpg">
       <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="post__entry__link">
         <h2>{{ post.title }}</h2>
         <div class="post__meta">
@@ -33,5 +33,6 @@ layout: default
   {% include pagination.html %}
 
 </main>
+<figure class="bg-figure"><img id="bgFigure"></figure>
 
 <script src="{{ "/assets/js/post.js" | relative_url }}"></script>

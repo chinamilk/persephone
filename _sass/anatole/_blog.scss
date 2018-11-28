@@ -2,7 +2,7 @@
   max-width: var(--content-width);
   width: 100%;
   margin: 3rem auto;
-  padding: 1.5rem 1rem;
+  z-index: 2;
   .post__top_navs {
     margin-bottom: 2rem;
   }
@@ -39,6 +39,12 @@
     margin: 0 0 3rem 0;
     .post__link {
       display: block;
+    }
+    .post__figure {
+      margin-bottom: 0.5rem;
+      img {
+        max-width: 100%;
+      }
     }
     h2 {
       margin-bottom: 0.75rem;
@@ -166,7 +172,7 @@
           &:before, &:after {
             right: 0;
             top: 0;
-          }  
+          }
           &:before {
             transform-origin: bottom right;
             transform: rotate(45deg);
@@ -180,7 +186,7 @@
           &:before, &:after {
             left: 0;
             top: 0;
-          }  
+          }
           &:before {
             transform-origin: bottom left;
             transform: rotate(45deg);
@@ -192,5 +198,23 @@
         }
       }
     }
+  }
+}
+.bg-figure {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  img {
+    width: 100vw;
+    height: auto;
+    opacity: 0;
+    transform: scale(1, 1);
+    transform-origin: bottom bottom;
+    position: absolute;
+    bottom: 0;
   }
 }
