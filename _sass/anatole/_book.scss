@@ -23,6 +23,11 @@
   padding: 5rem 10%;
   width: 60%;
 }
+.book__meta {
+  margin: 0 0 1.5rem 0;
+  color: var(--gray);
+  font-size: 0.875rem;
+}
 .book__title {
   margin: 2rem 0;
   color: var(--dark);
@@ -88,7 +93,7 @@
     .book__img {
       width: 100%;
       height: auto;
-      margin-top: -35%;  
+      margin-top: -35%;
     }
   }
   .book__content {

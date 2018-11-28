@@ -25,6 +25,7 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-toc
   - jekyll-extlinks
+  - jekyll-archives
 
 exclude:
   - Gemfile
@@ -68,3 +69,8 @@ locales:
 
 extlinks:
   attributes: {rel: nofollow, target: _blank}
+
+jekyll-archives:
+  enabled:
+    - tags
+  layout: tag

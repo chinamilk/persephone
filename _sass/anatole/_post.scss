@@ -87,12 +87,24 @@
   .post__title {
     margin: 3rem 0 1.3rem 0;
   }
-  .post__meta {
-    color: var(--gray);
+}
+.post__meta {
+  color: var(--gray);
+  span, time {
+    margin-right: 10px;
   }
+}
+.post__tags {
+  background-color: var(--lighter);
+  font-size: 0.875rem;
+  padding: 4px 8px;
+  border-radius: 3px;
+  color: var(--grayer);
 }
 .post__content {
   padding: 1.5rem 0;
+}
+.post {
   margin-bottom: 4rem;
 }
 

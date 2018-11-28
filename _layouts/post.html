@@ -20,7 +20,7 @@ layout: default
     <header class="post__header">
       <h1 class="post__title">{{ page.title | escape }}</h1>
       <div class="post__meta">
-        <time>{{ page.date | date: "%Y-%m-%d %H:%M" }}</time>
+        <time class="post__published_at">{{ page.date | date: "%Y-%m-%d" }}</time>
       </div>
     </header>
 
@@ -28,6 +28,10 @@ layout: default
       {{ content | toc | extlinks }}
     </div>
 
+    <footer class="post__meta">
+      <a class="post__tags" href="/tag/{{ page.tag }}">#{{ page.tag }}</a>
+      <!--<span class="post__word_count">{{ page.content | strip_html | strip_newlines | remove: " " | size }}</span>-->
+    </footer>
   </article>
 
   {% include contact.html %}

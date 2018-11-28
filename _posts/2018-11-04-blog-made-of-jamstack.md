@@ -11,6 +11,7 @@ latex: false
 toc: true
 keywords: JAMstack, Jekyll, Netlify CMS, 静态网页生成器, serverless, GitHub
 description: 基于JAMstack搭建serverless静态博客理念及方法分享。
+tag: 编程
 ---
 何谓JAMstack？J即JavaScript，A即APIs，M即Markup，官方解释如下：
 

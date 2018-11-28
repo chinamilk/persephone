@@ -8,9 +8,8 @@ date: 2018-11-17T03:27:18.320Z
 locale: zh
 ref: learning_methods
 toc: true
-code: false
-mermaid: false
 latex: true
+tag: 读书笔记
 ---
 我一直觉得，学习是一件享受的事，为了考试而学习却是一件痛苦的事，这尤其是在考试的内容无聊而又毫无意义的时候。
 
