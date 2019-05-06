@@ -36,7 +36,7 @@ export default class {
   get_avatar () {
     var src = "https://www.gravatar.com/avatar/"
     src += md5(this.email)
-    src += "?d=mm&s=54"
+    src += "?d=mm&s=45"
     return src;
   }
 }
