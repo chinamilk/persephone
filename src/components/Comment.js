@@ -165,10 +165,11 @@ export default class {
 
     content += '</div>'
 
+    let message
     if ( this.smiley ) {
-      let message = this.smiley.parse(comment.message)
+      message = this.smiley.parse(comment.message)
     } else {
-      let message = comment.message
+      message = comment.message
     }
     content += '<div class="comment__content">' + message + '</div></div>'
 
