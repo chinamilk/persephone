@@ -2,6 +2,7 @@ const $ = require("jquery");
 window.jQuery = $;
 import Cookies from 'js-cookie'
 
+import Smiley from '../components/Smiley'
 import Visitor from '../models/Visitor'
 import DateTime from '../helpers/DateTime'
 
@@ -25,6 +26,10 @@ export default class {
     this.urlInput = document.getElementsByName("fields[url]")[0]
     this.parentInput = document.getElementsByName("fields[parent]")[0]
     this.messageArea = document.getElementsByName("fields[message]")[0]
+
+    if ( document.getElementById("smileyContainer") ) {
+      this.smiley = new Smiley(this.messageArea)
+    }
 
     this.hintContainer = document.getElementById("commentHint")
     this.avatarImg = document.getElementById("visitorAvatar")
@@ -159,7 +164,13 @@ export default class {
     content += '<span class="comment__date">' + dt_str + '</span>'
 
     content += '</div>'
-    content += '<div class="comment__content">' + comment.message + '</div></div>'
+
+    if ( this.smiley ) {
+      let message = this.smiley.parse(comment.message)
+    } else {
+      let message = comment.message
+    }
+    content += '<div class="comment__content">' + message + '</div></div>'
 
     div.innerHTML = content
     return div

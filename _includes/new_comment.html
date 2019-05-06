@@ -33,7 +33,11 @@
         <span class="message-arrow"></span>
       </div>
       <div class="comment__box_bottom">
-        <div class="comment__hint" id="commentHint"></div>
+        {%- if site.smiley.enabled -%}
+        {% include smiley.html %}
+        {%- endif -%}
+        <div class="comment__hint" id="commentHint">
+        </div>
         <button type="submit" class="submit-btn" id="submitBtn">
           enmmm..
         </button>
