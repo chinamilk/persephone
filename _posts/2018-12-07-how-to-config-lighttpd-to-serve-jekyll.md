@@ -2,7 +2,7 @@
 title:  基于Lighttpd的Jekyll博客配置及优化
 date: "2018-12-07 21:19:26 +0800"
 code: true
-category: 编程
+category: 折腾
 keywords: Jekyll, Lighttpd, Ubuntu, 博客优化
 description: 怎么使用Lighttpd配置Jekyll博客服务，并进行速度优化、seo优化。
 ---

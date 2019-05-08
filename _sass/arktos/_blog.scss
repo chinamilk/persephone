@@ -194,3 +194,43 @@
     }
   }
 }
+.blog__categories {
+  margin-bottom: 2.5rem;
+  a {
+    margin-right: 2.75rem;
+    padding: 0 0.25rem;
+    display: inline-block;
+    &.active {
+      border-bottom: 1px solid var(--gray);
+    }
+  }
+}
+.post__list_item {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  line-height: 3rem;
+  position: relative;
+  transition: padding 0.25s ease-in;
+  &:after {
+    @include pseudo();
+    width: 0;
+    height: 1px;
+    left: 0;
+    top: 50%;
+    background-color: var(--light-gray);
+    transition: width 0.25s ease-in;
+  }
+  &:hover {
+    padding-left: 30px;
+  }
+  &:hover:after {
+    width: 20px;
+  }
+  .archive__time {
+    display: inline-block;
+    width: 135px;
+    font-size: 0.9rem;
+    color: var(--gray);
+  }
+}

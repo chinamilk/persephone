@@ -1,6 +1,7 @@
 import Slider from './components/Slider.js'
 import Summary from './components/Summary.js'
 import Comment from './components/Comment.js'
+import Archive from './components/Archive.js'
 
 if ( document.getElementById("bookSummary") ) {
   const summary = new Summary()
@@ -8,6 +9,10 @@ if ( document.getElementById("bookSummary") ) {
 
 if ( document.getElementById("sectionContainer") ) {
   const slider = new Slider()
+}
+
+if ( document.getElementById("postArchive") ) {
+  const archive = new Archive()
 }
 
 initMermaid();

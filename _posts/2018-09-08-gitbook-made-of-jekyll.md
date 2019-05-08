@@ -2,7 +2,7 @@
 title: 用jekyll模拟gitbook实现多书籍页面生成器
 date: 2018-09-08 13:23:12 +0800
 code: true
-category: 编程
+category: 折腾
 keywords: Jekyll, Gitbook, Jekyll插件, 多书籍网站生成器
 description: 分享一个Jekyll插件的写作思路和示例代码，功能是模拟gitbook生成书籍的功能做成多书籍网站生成器。
 ---

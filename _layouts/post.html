@@ -17,8 +17,6 @@ layout: default
         博客
       </a>
     </nav>
-    <nav class="post__langs">
-    </nav>
   </div>
   <article class="post">
     <header class="post__header">
@@ -31,13 +29,30 @@ layout: default
       {{ content | ext }}
     </div>
   </article>
-  {% if site.comment.enabled %}
-  {% include comments.html %}
-  {% else %}
-  {% include contact.html %}
-  {% endif %}
+  <nav class="post__relative">
+    <ul>
+      {%- if page.previous -%}
+      <li class="prev_post">
+        <a href="{{ page.previous.url }}">
+          {{ page.previous.title  }}
+        </a>
+      </li>
+      {%- endif -%}
+      {%- if page.next -%}
+      <li class="next_post">
+        <a href="{{ page.next.url }}">
+          {{ page.next.title  }}
+        </a>
+      </li>
+      {%- endif -%}
+    </ul>
+  </nav>
+  {%- if site.comment.enabled -%}
+  {%- include comments.html -%}
+  {%- else -%}
+  {%- include contact.html -%}
+  {%- endif -%}
 </main>
-
-{% if page.code %}
+{%- if page.code -%}
   <script>hljs.initHighlightingOnLoad();</script>
-{% endif %}
+{%- endif -%}
