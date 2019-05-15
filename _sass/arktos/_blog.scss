@@ -212,20 +212,42 @@
   line-height: 3rem;
   position: relative;
   transition: padding 0.25s ease-in;
-  &:after {
-    @include pseudo();
+  .archive__arrow {
+    display: inline-block;
+    position: absolute;
     width: 0;
     height: 1px;
     left: 0;
     top: 50%;
     background-color: var(--light-gray);
     transition: width 0.25s ease-in;
+    &:after, &:before {
+      content: "";
+      position: absolute;
+      width: 9px;
+      height: 1px;
+      background-color: var(--light-gray);
+      right: -2.5px;
+      opacity: 0;
+      transition: all 0.25s ease-in;
+    }
+    &:after {
+      transform: rotate(45deg);
+      top: -3px;
+    }
+    &:before {
+      transform: rotate(-45deg);
+      top: 3px;
+    }
   }
   &:hover {
-    padding-left: 30px;
-  }
-  &:hover:after {
-    width: 20px;
+    padding-left: 34px;
+    .archive__arrow {
+      width: 20px;
+      &:before, &:after {
+        opacity: 1;
+      }
+    }
   }
   .archive__time {
     display: inline-block;

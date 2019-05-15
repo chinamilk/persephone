@@ -16,6 +16,7 @@ layout: default
       {%- for post in site.posts -%}
       <li class="post__list_item" data-category="{{ post.category }}">
         <a href="{{ post.url }}">
+          <span class="archive__arrow"></span>
           <span class="archive__time">{{ post.date | date: "%Y-%m-%d" }}</span>
           <span class="archive__title">{{ post.title }}</span>
         </a>

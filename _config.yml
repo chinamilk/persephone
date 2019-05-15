@@ -32,7 +32,7 @@ defaults:
   
 plugins:
   - jekyll-feed
-  - jekyll-paginate-v2
+  #- jekyll-paginate-v2
   - jekyll-sitemap
 exclude:
   - Gemfile
@@ -58,15 +58,3 @@ comment:
 smiley:
   enabled: true
   dir: "assets/smileys"
-
-pagination:
-  enabled: true
-  per_page: 5
-  indexpage: index
-  title: ":title"
-  sort_field: date
-  sort_reverse: true
-  trail:
-    before: 2
-    after: 2
-
