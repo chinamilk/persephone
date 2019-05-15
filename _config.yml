@@ -7,7 +7,7 @@ author: Erl
 url: https://erl.im
 img_prefix: https://persephone.oss-cn-beijing.aliyuncs.com
 github_username: erlzhang
-version: v3.8.20190506
+version: v2.4.20190506
 sass:
   sass_dir: _sass
 markdown: kramdown
