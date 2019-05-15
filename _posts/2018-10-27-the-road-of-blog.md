@@ -1,6 +1,6 @@
 ---
 title: 博客之路
-category: 生活
+category: 折腾
 date: 2018-10-27 13:36:04 +0800
 keywords: 'emlog, Jekyll, 独立博客, wordpress, wordpress主题'
 description: 从Emlog到WordPress再到Jekyll，回顾六年博客搭建及写作生涯。
