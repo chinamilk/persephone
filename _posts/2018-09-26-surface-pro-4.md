@@ -1,7 +1,7 @@
 ---
 title: 如何让SurfacePro4满足日常编程需求
 date: '2018-09-26 09:43:44 +0800'
-category: 编程
+category: 折腾
 keywords: Surface Pro 4, windows编程工具, Linux子系统, Ubuntu in windows10, Termius
 description: 分享使用Surface Pro 4基于Windows10的Linux子系统编程的体验与常用工具。
 ---

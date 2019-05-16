@@ -90,6 +90,14 @@
     font-size: 0.935rem;
   }
 }
+.post__relative {
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+}
 .post__content {
   padding: 1.5rem 0;
   margin-bottom: 4rem;

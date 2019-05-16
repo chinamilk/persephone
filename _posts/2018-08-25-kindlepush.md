@@ -3,7 +3,7 @@ title: 利用Scrapy + gitbook做kindle电子报推送
 date: 2018-08-25 12:34:12 +0800
 code: true
 mermaid: true
-category: 编程
+category: 折腾
 keywords: kindle, Python, kindle推送, Scrapy, Gitbook
 description: 基于python、scrapy、gitbook制作新闻电子报并定时推送到kindle的过程方法分享。
 ---

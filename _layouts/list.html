@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main class="post__wrapper post__archive" id="postArchive">
+  <nav class="blog__categories">
+    <a href="#全部" data-category="全部" class="category active">全部</a>
+    {%- for category in site.categories -%}
+    <a href="#{{ category[0] }}" class="category" data-category="{{ category[0] }}">{{ category[0] }}</a>
+    {%- endfor -%}
+  </nav>
+  <div class="post__list archive__list">
+    {%- assign years = site.posts | group_by_exp: "post", "post.date | date: '%Y'" -%}
+    {%- for year in years -%}
+      <h3 class="post__list_title">{{ year.name }}</h3>
+      {%- assign posts = year.items -%}
+      <ul>
+        {%- for post in posts -%}
+        <li class="post__list_item" data-category="{{ post.category }}">
+          <a href="{{ post.url }}">
+            <span class="archive__arrow"></span>
+            <span class="archive__time">{{ post.date | date: "%Y-%m-%d" }}</span>
+            <span class="archive__title">{{ post.title }}</span>
+          </a>
+        </li>
+        {%- endfor -%}
+      </ul>
+    {%- endfor -%}
+  </div>
+</main>

@@ -3,14 +3,13 @@ layout: default
 ---
 
 {% include header.html %}
-
 <main class="post__archive">
   <div class="post__top_navs clearfix">
     <nav class="post__langs">
     </nav>
   </div>
-  {% assign posts=paginator.posts %}
-  {% for post in posts %}
+  {%- assign posts=paginator.posts -%}
+  {%- for post in posts -%}
     <article class="post__entry">
       <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="post__entry__link">
         <h2>{{ post.title }}</h2>
@@ -23,8 +22,6 @@ layout: default
         <div class="post__more_arrow"></div>
       </a>
     </article>
-  {% endfor %}
-
-  {% include pagination.html %}
-
+  {%- endfor -%}
+  {%- include pagination.html -%}
 </main>

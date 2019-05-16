@@ -1,7 +1,7 @@
 ---
 title: Jekyll 主题 Arktos
 date: 2019-01-11 21:46 +0800
-category: 编程
+category: 折腾
 keywords: Jekyll, Jekyll theme, Jekyll主题, jekyll-theme-arktos
 ---
 

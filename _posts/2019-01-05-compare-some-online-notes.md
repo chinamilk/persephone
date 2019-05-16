@@ -1,7 +1,7 @@
 ---
 title: 对比几款云笔记产品
 date: 2019-01-05 18:10 +0800
-category: 生活
+category: 折腾
 excerpt: 这只是一篇私人的对比兼吐槽文，可能不具备客观性及科学性。
 keywords: 印象笔记, StackEdit, Notion, 有道云笔记, Onenote, 云笔记产品
 ---

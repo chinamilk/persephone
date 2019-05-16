@@ -17,8 +17,6 @@ layout: default
         博客
       </a>
     </nav>
-    <nav class="post__langs">
-    </nav>
   </div>
   <article class="post">
     <header class="post__header">
@@ -31,13 +29,12 @@ layout: default
       {{ content | ext }}
     </div>
   </article>
-  {% if site.comment.enabled %}
-  {% include comments.html %}
-  {% else %}
-  {% include contact.html %}
-  {% endif %}
+  {%- if site.comment.enabled -%}
+  {%- include comments.html -%}
+  {%- else -%}
+  {%- include contact.html -%}
+  {%- endif -%}
 </main>
-
-{% if page.code %}
+{%- if page.code -%}
   <script>hljs.initHighlightingOnLoad();</script>
-{% endif %}
+{%- endif -%}

@@ -1,5 +1,6 @@
 ﻿---
 title: 从self-hosted到Serverless
+category: 折腾
 date: 2019-04-21 14:30 +0800
 ---
 
