@@ -15,6 +15,12 @@ title: 关于
 
 目前使用Jekyll，居于~~搬瓦工VPS~~[Netlify](https://www.netlify.com/)。主题Arktos，如果你感兴趣，可以来[这里](https://github.com/erlzhang/persephone)自行获取（注意清除我的文章、小说和百度统计代码）。
 
+### 友情链接
+
+[Sky](https://sky.erl.im/)
+
+[静水流深](https://www.geekboy.org/)
+
 ### 版权声明
 
 本站内容（包含且不限于小说、博客的全部文章及文章中的配图，截图除外）皆为原创，允许非商业性转载，转载请务必保留作者姓名，并注明出处。
