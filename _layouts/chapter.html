@@ -8,11 +8,12 @@ layout: default
     <div class="body__inner">
       {% include header.html %}
       <main class="chapter__wrapper" tabindex="-1" role="main">
-          <div class="chapter__inner">
-            <article class="chapter__content content">
-              {{ content | ext }}
-            </article>
-          </div>
+        <div class="chapter__inner">
+          <article class="chapter__content content">
+            {{ content | ext }}
+          </article>
+        </div>
+        {% include footer.html %}
       </main>
     </div>
     {% if page.prev and page.prev.path %}

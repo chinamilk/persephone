@@ -88,3 +88,14 @@ a:hover, a:visited, a:linked, a:active {
   clear: both;
   display: block;
 }
+.site-footer {
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--gray);
+  font-size: 0.875rem;
+  text-align: center;
+  width: 100%;
+  a {
+    margin: 0 3px;
+  }
+}
